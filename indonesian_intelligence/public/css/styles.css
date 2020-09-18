@@ -3236,6 +3236,12 @@ input[type=button].btn-block {
 .btn-group-vertical > .btn.active {
   z-index: 1;
 }
+@media(max-width: 900px){
+  .btn-group {
+    display: block !important;
+    width: auto !important;
+  }
+}
 
 .btn-toolbar {
   display: flex;

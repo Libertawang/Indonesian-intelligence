@@ -51,32 +51,7 @@ head
   link(rel='canonical' href='https://www.weather-forecast.com/maps/Indonesia')
   script(data-ezscrex='false' data-cfasync='false' type='text/javascript').
     window.google_analytics_uacct = "UA-147515467-38";
-  script(data-ezscrex='false' data-cfasync='false' type='text/javascript').
-    var _gaq = _gaq || [];
-    _gaq.push(function(){
-    _gat._createTracker('UA-147515467-38', 'e');
-    });
-    _gaq.push(function(){
-    _gat._createTracker('UA-38339005-1', 'f');
-    });
-    _gaq.push(['e._setDomainName', 'weather-forecast.com']);
-    _gaq.push(['f._setDomainName', 'weather-forecast.com']);
-    _gaq.push(['e._setCustomVar',1,'template','old_site_gc',3]);
-    _gaq.push(['e._setCustomVar',2,'t','126',3]);
-    _gaq.push(['e._setCustomVar',3,'rid','0',2]);
-    _gaq.push(['e._setCustomVar',4,'bra','mod72-c',3]);
-    _gaq.push(['e._setAllowAnchor',true]);
-    _gaq.push(['e._setSiteSpeedSampleRate', 10]);
-    _gaq.push(['f._setCustomVar',1,'template','old_site_gc',3]);
-    _gaq.push(['f._setCustomVar',2,'domain','weather-forecast.com',3]);
-    _gaq.push(['f._setSiteSpeedSampleRate', 20]);
-    _gaq.push(['e._trackPageview']);
-    _gaq.push(['f._trackPageview']);
-    (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
+  
   script(type='text/javascript').
     var ezouid = "1";
   base(href='https://www.weather-forecast.com/maps/Indonesia')
@@ -88,12 +63,7 @@ head
     }
     var ezoFormfactor = '1';
     var ezo_elements_to_check = Array();
-  // START EZHEAD
-  script(data-ezscrex='false' type='text/javascript').
-    var soc_app_id = '0';
-    var did = 173208;
-    var ezdomain = 'weather-forecast.com';
-    var ezoicSearchable = 1;
+
   // {jquery}
   // END EZHEAD
 
@@ -136,15 +106,7 @@ div(style='clear:both;')
             var timesBannerRefreshed = 0;
             var afterViewTimerElapsed = false;
             var afterRenderTimerElapsed = false;
-            var refresher = function(slot) {
-            console.log("Refreshing cont_bn_leaderboard_oko");
-            timesBannerRefreshed++;
-            afterRenderTimerElapsed = false;
-            afterViewTimerElapsed = false;
-            googletag.cmd.push(function() {
-            googletag.pubads().refresh([slot]);
-            });
-            }
+            
             var checkRefreshVisible = function(slot, element) {
             if (isBnInViewport(element))
             refresher(slot);
@@ -518,16 +480,7 @@ script(type='text/javascript').
   FCMAPS.initMap1();
   FCMAPS.initialSwitch();
   FCMAPS.putCross(160, 279);
-  $('#map-loc-namebox').auto_complete_loc({
-  url: '/maps/Indonesia/ac_location_name?query=__VALUE__',
-  immediate_submit: false,
-  loc_id: 'map_loc_id',
-  default_text: 'Jakarta',
-  use_first_entry: true,
-  callback_on_choice: function(result) {
-  eval("FCMAPS.putCross("+result+")");
-  }
-  });
+ 
   $("input[name='airports']").click(function() {
   if ($(this).attr('data-class') == 'rtn') {
   $('#mapcontainer').addClass('rtn');
@@ -540,12 +493,6 @@ script(type='text/javascript').
   $('#map-loc-namebox').change(function(input) {
   if (this.value == "") FCMAPS.putCross(160, 279);
   });
-  });
-script.
-  $(document).ready(function () {
-  var url_str = '/locations/ac_location_name?query=__VALUE__';
-  var default_text_str = 'ENTER A CITY OR COUNTRY:';
-  $('#location').auto_complete_loc({url: url_str, default_text: default_text_str, loc_id: 'location_loc_id', prevent_empty_submit: true});
   });
 script(type='text/javascript').
   if (typeof init_uj == "function") {
