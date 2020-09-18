@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Source+Sans+Pro&display=swap');
+
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: #ff5100e1;
+    font-family: 'Josefin Sans';
+    text-align: center;
+}
+
+h1{
+    font-size: 35px;
+}
+
+p{
+    color: #fff;
+    font-size: 20px;
+}
+
+.home_button .btn {
+    position: absolute;
+    top: 30px;
+    right: -25px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.info .initial_info{
+    margin-top: 75px;
+}
+
+.info .initial_info h1{
+    color: #fff;
+}
