@@ -1,10 +1,109 @@
 doctype html
-head
-  meta(charset='UTF-8')
-  meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  title Weather App
-  link(rel='stylesheet' href='css/weather.css')
-  script(src='js/weather.js' defer='')
-form#form
-  input#search(type='text' placeholder='Search by location' autocomplete='off')
-main#main
+html 
+    title Weather 
+    link(rel = "stylesheet" href = "/css/weather.css")
+body 
+    section(class = "information")
+        div(class = "buttons")
+            a(href="#the_quiz")
+                div(class = "quiz_button")
+                    button(class = "btn" onclick="quiz") Quiz
+            a(href = "https://panjatpinang.herokuapp.com/")
+                div(class = "home_button")
+                    button(class = "btn") Home
+
+        div(class = "wrapper")
+
+            h1 Various cities
+            h1 &
+            h1 Quiz
+
+            h2 When to visit to have the utmost fun??
+
+            div(class = "desc")
+                p.   
+                    The main variable in Indonesia's climate is not the temperature or the 
+                    air pressure. It is the rainfall that plays a crucial role. Since Indonesia
+                    is split by the equator, it has an almost entirely tropical climate, with the 
+                    coastal planes averaging 28°C. The only two seasons are Rainy season (December to March)
+                    and Dry season(June to September).
+
+            div(class = "team")
+
+                div(class = "team_member")
+
+                    div(class = "team_img")
+                        img(src="/images/bali.webp" alt="bali_image")
+
+                    h3 Bali
+                    p.
+                        Bali attracts plenty of tourists every year 
+                        through its wild beaches, its lush plains of luminous rice,
+                        and its temples. Bali is a good destination any time of the 
+                        year. There is more rainfall from November to March but the rains 
+                        are usually followed by sunny clear skies.
+                        That said, April to September is the best time to visit Bali when
+                        there it is the sunniest making the time spent at the beaches swimming
+                        and surfing the most fun!!
+
+                div(class = "team_member")
+
+                    div(class = "team_img")
+                        img(src="/images/java.jpg" alt="java_image")
+
+                    h3 Java
+                    p.
+                        With its endless green rice paddies, 
+                        rumbling volcanoes, fascinating culture 
+                        and spiritual temples, Java is one of the 
+                        most captivating islands in Indonesia. It is 
+                        pretty dry and hot during the months April and 
+                        October making it the best time to visit 
+                        java for watching the sun rise over giant buddhas, 
+                        rumbling Bromo (the Volcanos). 
+                        
+                div(class = "team_member")
+
+                    div(class = "team_img")
+                        img(src="/images/sumatra.jpg" alt="sumatra_image")
+                        
+                    h3 Sumatra
+                    p.
+                        Sumatra has a hot and humid tropical climate. The monsoons are 
+                        extreme and lead to potholed and unpaved roads. It also makes 
+                        hiking miserable during a downpour. Therefore, the best time to 
+                        visit Sumatra is either May and June, or September and October, 
+                        missing the peak (and hottest) summer months and the extreme 
+                        monsoon months. Orangutans can be seen throughtout the year.
+
+                div(class = "team_member")
+
+                    div(class = "team_img")
+                        img(src="/images/nusa.webp" alt="nusa_image")
+                        
+                    h3 Nusa Tenggara
+                    p.
+                        The difference between the dry and wet seasons are slightly 
+                        bigger in this region. This region lies to the east of Bali. As
+                        a rule of thumb, the closer to Autralia you are, the longer the
+                        dry season. Nusa is known for its tropical wonderland of dazzling 
+                        white beaches, luminous turquoise seas, hidden villages and thrilling 
+                        wildlife. Dry months are favourable for their sunshine and blue skies.
+
+    section(class = "quiz" id = "the_quiz")
+        div(class  = "custom-box")
+            script(type="text/javascript").
+                (function(d,s,id,u){
+                if (d.getElementById(id)) return;
+                var js, sjs = d.getElementsByTagName(s)[0],
+                    t = Math.floor(new Date().getTime() / 1000000);
+                js=d.createElement(s); js.id=id; js.async=1; js.src=u+'?'+t;
+                sjs.parentNode.insertBefore(js, sjs);
+                }(document, 'script', 'os-widget-jssdk', 'https://www.opinionstage.com/assets/loader.js'));
+            div(class="os_widget" data-of="shreyas58" data-path="/shreyas58/try-the-trivia-quiz-below" id="os-widget-740200")
+
+
+
+
+            
+            

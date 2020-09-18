@@ -38,7 +38,7 @@ block content
           .col-lg-8.text-center
             h2.text-white.mt-0 About Us!
             hr.divider.light.my-4
-            p.text-white-50.mb-4 
+            p.text-black-100.mb-4 
               |   Indonesian Intelligence is a website that helps people get to know the culture of Indonesia.
               |   We consider each person to be unique and cater to their specific needs by providing personalized solutions.
               |   The website aims to inspire and support first generation born Indonesian Australians through their journey of knowing their parent's culture.
@@ -49,6 +49,7 @@ block content
         .row.h-100.align-items-center.justify-content-center.text-center
           .col-lg-10.align-self-end
             h2.text-center.mt-0 Guess the gender!
+                    hr.divider.my-4
           .col-lg-8.align-self-baseline
             p.text-muted-75.font-weight-light.mb-5
               | You might find these names unique.
@@ -75,15 +76,29 @@ block content
     section.page-section.bg-dark.text-white
       .container.text-center
         h2.mb-4 A Tropical Country
-        hr.divider.my-4
+
         p.text-light.mb-5
           | Indonesia doesn't have winter, spring, summer or autumn.
           | It's a tropical country so it only has either rainy season or dry season. 
           | Switch to one of slides to see the most common weather for specific month.
           | This is based on Denpasar, one of the most visited cities in Indonesia.
-        p.text-light.mb-5
-          a(href="/weather") Click to view the real-time weather!
-        #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+        
+        
+        
+        #carouselIndicators.carousel.slide(data-ride='carousel')
+          .btn-group
+            button.button(data-target='#carouselIndicators' , data-slide-to='0') January
+            button.button(data-target='#carouselIndicators' , data-slide-to='1') Febuary
+            button.button(data-target='#carouselIndicators' , data-slide-to='2') March
+            button.button(data-target='#carouselIndicators' , data-slide-to='3') April
+            button.button(data-target='#carouselIndicators' , data-slide-to='4') May
+            button.button(data-target='#carouselIndicators' , data-slide-to='5') June
+            button.button(data-target='#carouselIndicators' , data-slide-to='6') July
+            button.button(data-target='#carouselIndicators' , data-slide-to='7') August
+            button.button(data-target='#carouselIndicators' , data-slide-to='8') September
+            button.button(data-target='#carouselIndicators' , data-slide-to='9') October
+            button.button(data-target='#carouselIndicators' , data-slide-to='10') November
+            button.button(data-target='#carouselIndicators' , data-slide-to='11') December
           ol.carousel-indicators
             li.active(data-target='#carouselIndicators', data-slide-to='0')
             li(data-target='#carouselIndicators', data-slide-to='1')
@@ -128,6 +143,23 @@ block content
           a.carousel-control-next(href='#carouselIndicators', role='button', data-slide='next')
             span.carousel-control-next-icon(aria-hidden='true')
             span.sr-only Next
+      .container.text-center
+        p.text-light.mb-5
+          |
+        p.text-light.mb-5
+          |
+        p.text-light.mb-5
+          | We have more introduction and a quiz for you!
+        a.btn.btn-light.btn-xl(href='/weather' target="_target") Click Here!
+
+      .container.text-center
+        p.text-light.mb-5
+        p.text-light.mb-5
+        p.text-light.mb-5
+          |Interested? Wanna see more weather on different cities around Indonesia? Or you want to see the weather for the next 10 days!    
+          |
+        p.text-light.mb-5
+          a.btn.btn-light.btn-xl(href='/weather2' target="_target") Click to see the future!
 
 
     // Contact

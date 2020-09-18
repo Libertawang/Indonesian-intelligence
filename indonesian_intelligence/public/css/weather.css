@@ -1,42 +1,157 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@600&display=swap');
 
-* {
+*{
+    margin : 0;
+    padding : 0;
     box-sizing: border-box;
 }
 
-body {
-    background: linear-gradient(300deg, #ced1d6, #bfc0c0);
-    font-family: "Poppins", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+body{
+    background: #fff;
+    font-family: 'Grandstander';
+    text-align: center;
+    padding: 0;
     margin: 0;
-    min-height: 100vh;
-}
-
-input {
-    background-color: #fff;
-    border: none;
-    border-radius: 25px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    font-family: inherit;
-    font-size: 1rem;
-    padding: 1rem;
-    min-width: 300px;
-}
-
-input:focus {
     outline: none;
+    margin-bottom: 0px;
 }
 
-.weather {
-    font-size: 2rem;
+.information{
+    background-color: #fff;
+}
+
+.wrapper{
+    margin-top: 0px;
+    height: 100%;
+}
+
+.home_button .btn {
+    position: absolute;
+    top: 30px;
+    left: 75px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .quiz_button .btn {
+    position: absolute;
+    top: 30px;
+    right: -25px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .wrapper h1{
+    font-family: 'Grandstander';
+    font-size: 26px;
+    margin-bottom: 1%;
+    text-align: center;
+    margin-top: 0%;
+    color: #ff5100e1;
+}
+
+.wrapper h2{
+    font-family: 'Grandstander';
+    font-size: 20px;
+    margin-bottom: 1%;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 4%;
+    color: #ff5100e1;
+}
+
+.desc{
+    padding: 0px 40px 0px 40px;
+    line-height: 20px;
+    color: black;
+    position: relative;
+    font-size: 20px;
+}
+
+.desc p{
+    font-family: 'Grandstander';
+    font-size: 20px;
+    margin-left: 15%;
+    margin-bottom: 30px;
+    margin-right: 15%;
+    padding: 0% 3% 2% 3%;
     text-align: center;
 }
 
-.weather h2 {
+.team{
     display: flex;
-    align-items: center;
-    margin-bottom: 0;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
+.team .team_member{
+    background: #ff5100e1;
+    margin: 5px;
+    margin-bottom: 80px;
+    width: 355px;
+    padding: 40px;
+    line-height: 20px;
+    color: #cfc4bfe1;
+    position: relative;
+    margin-top: 150;
+    font-size: 20px;
+}
+
+.team .team_member h3{
+    color: #fff;
+    font-size: 26px;
+    margin-top: 120px;
+}
+
+.team .team_member p{
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+
+.team .team_member .team_img{
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.team .team_member .team_img img{
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+}
+
+.quiz{
+    background: #ff5100e1;
+}
+
+
+.custom-box{
+    max-width: 700px;
+    margin-top: 20px;
+    margin:40px auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
