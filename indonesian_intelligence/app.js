@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const enforce = require('express-sslify')
 
-app.use(enforce.HTTPS({trustProtoHeader: true}));
+app.use(enforce.express({trustProtoHeader: true}));
 app.use(express.static(path.join(__dirname, 'dist')));
 
 var indexRouter = require('./routes/index');
