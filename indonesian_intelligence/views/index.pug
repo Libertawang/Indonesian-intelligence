@@ -11,7 +11,7 @@ block content
         #navbarResponsive.collapse.navbar-collapse
           ul.navbar-nav.ml-auto.my-2.my-lg-0
             li.nav-item
-              a.nav-link.js-scroll-trigger(href='#panja') Game
+              a.nav-link.js-scroll-trigger(href='#panja') Independent Day
             li.nav-item
               a.nav-link.js-scroll-trigger(href='#name') Indonesian Names
             li.nav-item
@@ -37,7 +37,7 @@ block content
               | Jump on our fun activities and learn!
             a.btn.btn-primary.btn-xl.js-scroll-trigger(href='#panja') Find Out More
     
-    // Game
+    // Independent Day
     section#panja.page-section.bg-primary
       .container
           .row.justify-content-center
@@ -55,7 +55,7 @@ block content
               a.btn.btn-light.btn-xl.js-scroll-trigger(href='/panjatpinang' target="_blank") Let's Get Started!
 
 
-    // Names
+    // Names Feature
     section#name.page-section
       .container
         .row.h-100.align-items-center.justify-content-center.text-center
@@ -66,24 +66,21 @@ block content
             p.text-muted-75.font-weight-light.mb-5(style='font-size:22px;') 
               | You might find these names unique.
               | Do you think this person is a boy or a girl?
-            p.text-muted-75.font-weight-light.mb-5(style='font-size:22px;') 
-              | If you guess it wrong, it will be shown with red.
-              | If you guess it right, it will be shown with green!
-        #game.justify-center.flex-column
-          #hud
-            #hud-item
-              h1#questionCorrect.hud-main-text
-          h2#question Do you think this is a boy's name or girl's name?
-          .choice-container
-            p.choice-prefix A
-            p.choice-text(data-number='1') Boy
-          .choice-container
-            p.choice-prefix B
-            p.choice-text(data-number='2') Girl
+            
+        // The name quiz
+        script(type='text/javascript').
+          (function(d,s,id,u){
+          if (d.getElementById(id)) return;
+          var js, sjs = d.getElementsByTagName(s)[0],
+          t = Math.floor(new Date().getTime() / 1000000);
+          js=d.createElement(s); js.id=id; js.async=1; js.src=u+'?'+t;
+          sjs.parentNode.insertBefore(js, sjs);
+          }(document, 'script', 'os-widget-jssdk', 'https://www.opinionstage.com/assets/loader.js'));
+        #os-widget-740153.os_widget(data-of='shreyas58' data-path='/shreyas58/test-your-olympic-knowledge')
 
 
         
-    // Weather
+    // Weather Feature
     
     section#weather.page-section.bg-dark.text-white
       .container.text-center
@@ -96,9 +93,10 @@ block content
           | This is based on Denpasar, one of the most visited cities in Indonesia.
         
         
-        
+        // Carousel of weather
         #carouselIndicators.carousel.slide(data-ride='carousel')
           .container
+            // Button to each month
             .btn-group(margin:5px;font-size: 1.5vw;)
               button.button(data-target='#carouselIndicators' , data-slide-to='0') January
               button.button(data-target='#carouselIndicators' , data-slide-to='1') Febuary
@@ -113,6 +111,7 @@ block content
               button.button(data-target='#carouselIndicators' , data-slide-to='10') November
               button.button(data-target='#carouselIndicators' , data-slide-to='11') December
           ol.carousel-indicators
+            // Indicator for each month
             li.active(data-target='#carouselIndicators', data-slide-to='0')
             li(data-target='#carouselIndicators', data-slide-to='1')
             li(data-target='#carouselIndicators', data-slide-to='2')
@@ -126,6 +125,7 @@ block content
             li(data-target='#carouselIndicators', data-slide-to='10')
             li(data-target='#carouselIndicators', data-slide-to='11')
           .carousel-inner
+            // The pictures
             .carousel-item.active
               img.d-block.w-100(src='/images/1.png', alt='January')
             .carousel-item
@@ -150,12 +150,14 @@ block content
               img.d-block.w-100(src='/images/11.png' alt='November')
             .carousel-item
               img.d-block.w-100(src='/images/12.png' alt='December')
+          // Add arrow key to navigate
           a.carousel-control-prev(href='#carouselIndicators', role='button', data-slide='prev')
             span.carousel-control-prev-icon(aria-hidden='true')
             span.sr-only Previous
           a.carousel-control-next(href='#carouselIndicators', role='button', data-slide='next')
             span.carousel-control-next-icon(aria-hidden='true')
             span.sr-only Next
+      // Link to another site
       .container.text-center
         p.text-light.mb-5
           |
@@ -164,7 +166,7 @@ block content
         p.text-light.mb-5(style='font-size:22px;') 
           | We have more introduction and a quiz for you!
         a.btn.btn-light.btn-xl(href='/weather' target="_target") Click Here!
-
+      // To another feature of weather
       .container.text-center
         p.text-light.mb-5
         p.text-light.mb-5
