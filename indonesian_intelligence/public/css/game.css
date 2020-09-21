@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@600&display=swap');
 
 *{
     margin : 0;
@@ -7,26 +6,26 @@
     box-sizing: border-box;
 }
 
-
 body{
-    background: #ff5100e1;
-    font-family: 'Josefin Sans';
+    background: #343a40;
+    font-family: 'Merriweather';
     text-align: center;
+    padding: 0;
+    margin-top: 0px;
+    margin: 0px;
+    outline: none;
+    margin-bottom: 0px;
 }
 
-h1{
-    font-size: 35px;
-}
-
-p{
-    color: #fff;
-    font-size: 20px;
+.the_buttons{
+    height: 60px;
+    background-color: #f4623a;
 }
 
 .home_button .btn {
     position: absolute;
     top: 30px;
-    right: -25px;
+    left: 75px;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: #f1f1f1;
@@ -37,12 +36,14 @@ p{
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
-}
+  }
 
-.info .initial_info{
-    margin-top: 75px;
-}
-
-.info .initial_info h1{
+h1{
     color: #fff;
+    font-size: 30px;
+}
+
+h3{
+    color: #fff;
+    font-size: 20px;
 }
