@@ -15,7 +15,7 @@ var app = express();
 
 app.use(enforce.HTTPS({ trustProtoHeader: true }));
 
-app.use(express.static("public")) 
+app.use(express.static("public"));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
