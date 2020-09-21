@@ -3,6 +3,10 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const enforce = require('express-sslify')
+
+app.use(enforce.HTTPS({trustProtoHeader: true}));
+app.use(express.static(path.join(__dirname, 'dist')));
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
