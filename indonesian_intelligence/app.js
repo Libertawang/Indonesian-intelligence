@@ -7,7 +7,17 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+
+
+var wwwhisper = require('connect-wwwhisper');
+// app holds a reference to express or connect framework, it
+// may be named differently in your source file.
 var app = express();
+
+app.use(wwwhisper());
+
+
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
