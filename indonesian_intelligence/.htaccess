@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Password Protected Area"
-AuthUserFile /Liberta/Documents/GitHub/Indonesian-intelligence/indonesian_intelligence/.htaccess
+AuthUserFile /.htaccess
 Require valid-user
