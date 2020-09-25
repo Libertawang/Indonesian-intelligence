@@ -21,4 +21,9 @@ router.get('/panjatpinang', function(req, res, next) {
   res.render('panjat_pinang', { title: 'Panjat Pinang' });
 });
 
+/* GET game page. */
+router.get('/wrong', function(req, res, next) {
+  res.render('wrong', { title: 'Wrong Password' });
+});
+
 module.exports = router;
