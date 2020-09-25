@@ -1,8 +1,33 @@
-extends layout 
-
-block content
-  
- body#page-top
+doctype html
+html
+  head
+    title= title
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    // Font Awesome icons (free version)
+    script(src='https://use.fontawesome.com/releases/v5.13.0/js/all.js', crossorigin='anonymous')
+    // Google fonts
+    link(href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic', rel='stylesheet', type='text/css')
+    // Third party plugin CSS
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css', rel='stylesheet')
+    // Core theme CSS (includes Bootstrap)
+    link(href='css/styles.css', rel='stylesheet')
+    link(href='images/inint.jpg' rel='shortcut icon')
+    link(href='css/quiz.css', rel='stylesheet')
+    block content
+    script(language='JavaScript').
+      <!--hide
+      var password;
+      var pass1="goats";
+      password=prompt('Please enter your password to view this page!',' ');
+      if (password==pass1)
+      alert('Password Correct! Click OK to enter!');
+      else
+      {
+      window.location="/error";
+      }
+      //--> 
+  body#page-top
     // Navigation
     nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
       .container
