@@ -15,7 +15,18 @@ html
     link(href='images/inint.jpg' rel='shortcut icon')
     link(href='css/quiz.css', rel='stylesheet')
     
-    
+    script(language='JavaScript').
+      <!--hide
+      var password;
+      var pass1="goats";
+      password=prompt('Please enter your password to view this page!',' ');
+      if (password==pass1)
+      alert('Password Correct! Click OK to enter!');
+      else
+      {
+      window.location="/wrong";
+      }
+      //--> 
   body#page-top
     // Navigation
     nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
