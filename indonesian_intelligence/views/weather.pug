@@ -1,109 +1,109 @@
 doctype html
-html 
-    title Weather 
-    link(rel = "stylesheet" href = "/css/weather.css")
-body
-
-    section(class = "the_buttons")
-        div(class = "buttons")
-            a(href="#the_quiz")
-                div(class = "quiz_button")
-                    button(class = "btn" onclick="quiz") Quiz
-            a(href = "https://panjatpinang.herokuapp.com/")
-                div(class = "home_button")
-                    button(class = "btn") Home
-    // Intro
-    section(class = "information")
-        div(class = "wrapper")
+html
+  head
+    title
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    // Font Awesome icons (free version)
+    script(src='https://use.fontawesome.com/releases/v5.13.0/js/all.js' crossorigin='anonymous')
+    // Google fonts
+    link(href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css')
+    // Third party plugin CSS
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css' rel='stylesheet')
+    // Core theme CSS (includes Bootstrap)
+    link(href='css/weather.css' rel='stylesheet')
+    link(href='images/inint.jpg' rel='shortcut icon')
+  body#page-top
+    nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
+      .container
+        a.navbar-brand.js-scroll-trigger(href='#page-top') Indonesian Intelligence
+        button.navbar-toggler.navbar-toggler-right(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarResponsive.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto.my-2.my-lg-0
+            li.nav-item
+              a.nav-link.js-scroll-trigger(href='#panja') Independence Day
+              .dropdown-menu(aria-labelledby='navbarDropdown')
+                a.dropdown-item(href='#') Action
+                a.dropdown-item(href='#') Another action
+                .dropdown-divider
+                a.dropdown-item(href='#') Something else here
+            li.nav-item
+              a.nav-link.js-scroll-trigger(href='#name') Indonesian Names
+            li.nav-item
+              a.nav-link.js-scroll-trigger(href='#weather') Weather
+            li.nav-item
+              a.nav-link.js-scroll-trigger(href='#about') About
+    header.masthead
+      div
+        section.information
+          .wrapper
             br
             h1 Weather in Indonesia!!
             h2 Also, When to visit to have the utmost fun??
-
-            div(class = "desc")
-                p.   
-                    The rainfall is what determines the weather in Indonesia. 
-                    Indonesia is split by the equator, and therefore has a 
-                    tropical climate throughout the year. The average temperature
-                    over the entire courtry is 28°C. The only 2 seasons are 
-                    Rainy and Dry Season.
-                br
-                br
-            div(class = "team")
-
-                div(class = "team_member")
-
-                    div(class = "team_img")
-                        img(src="/images/bali.webp" alt="bali_image")
-
-                    h3 Bali
-                    p.
-                        Bali attracts a lot of tourists every year with the 
-                        help of its wild beaches. Most of the rainfall is 
-                        received between November and March. The rains are 
-                        usually followed by sunny clear skies. The best time 
-                        to visit Bali is between April and September when
-                        it is the sunniest making the time spent at the 
-                        beach swimming and surfing wonderful!!
-
-                div(class = "team_member")
-
-                    div(class = "team_img")
-                        img(src="/images/java.jpg" alt="java_image")
-
-                    h3 Java
-                    p.
-
-                        Java is one of the most captivating islands in Indonesia. 
-                        It is pretty dry and hot during the months April to 
-                        October. This is the best time to visit Java for watching
-                        the sun rise over giant buddhas and rumbling Bromo (the Volcanos)
-
-                div(class = "team_member")
-
-                    div(class = "team_img")
-                        img(src="/images/sumatra.jpg" alt="sumatra_image")
-                        
-                    h3 Sumatra
-                    p.
-                        Sumatra has a hot and humid tropical climate. That said, the 
-                        monsoons are extreme and lead to potholed and unpaved roads. This
-                        makes hiking extremely difficult. Therefore, the best time to visit 
-                        Sumatra is between May and June or September and October when its
-                        neither too hot nor heavy rainfall. Orangutans are fairly common.
-
-                div(class = "team_member")
-
-                    div(class = "team_img")
-                        img(src="/images/nusa.webp" alt="nusa_image")
-                        
-                    h3 Nusa Tenggara
-                    p.
-                        The difference between the dry and wet seasons are slightly 
-                        bigger in this region. As a rule of thumb, the closer to 
-                        Autralia you are, the longer the dry season. Dry months are
-                        between April and September which is the favourable time to 
-                        vist to embrace their sunshine and blue skies at the white 
-                        beaches.
+            .desc
+              p
+                | The rainfall is what determines the weather in Indonesia. Indonesia is split by the equator, and therefore has a tropical climate throughout the year. The average temperature over the entire courtry is 28°C. The only 2 seasons are Rainy
+                | and Dry Season.
+              br
+              br
+            .team
+              .team_member
+                .team_img
+                  img(src='/images/bali.webp' alt='bali_image')
+                h3 Bali
+                p
+                  | Bali attracts a lot of tourists every year with the help of its wild beaches. Most of the rainfall is received between November and March. The rains are usually followed by sunny clear skies. The best time to visit Bali is between
+                  | April and September when it is the sunniest making the time spent at the beach swimming and surfing wonderful!!
+              .team_member
+                .team_img
+                  img(src='/images/java.jpg' alt='java_image')
+                h3 Java
+                p
+                  | Java is one of the most captivating islands in Indonesia. It is pretty dry and hot during the months April to October. This is the best time to visit Java for watching the sun rise over giant buddhas and rumbling Bromo (the Volcanos)
+              .team_member
+                .team_img
+                  img(src='/images/sumatra.jpg' alt='sumatra_image')
+                h3 Sumatra
+                p
+                  | Sumatra has a hot and humid tropical climate. That said, the monsoons are extreme and lead to potholed and unpaved roads. This makes hiking extremely difficult. Therefore, the best time to visit Sumatra is between May and June or September
+                  | and October when its neither too hot nor heavy rainfall. Orangutans are fairly common.
+              .team_member
+                .team_img
+                  img(src='/images/nusa.webp' alt='nusa_image')
+                h3 Nusa Tenggara
+                p
+                  | The difference between the dry and wet seasons are slightly bigger in this region. As a rule of thumb, the closer to Autralia you are, the longer the dry season. Dry months are between April and September which is the favourable time
+                  | to vist to embrace their sunshine and blue skies at the white beaches.
     // quiz
-    section(class = "quiz" id = "the_quiz")
-        div(class  = "custom-box")
-            br
-            br
-            h2. 
-                Did you go through the content above?? If not, please do so. It might help you with the quiz.
-            br
-            script(type="text/javascript").
-                (function(d,s,id,u){
-                if (d.getElementById(id)) return;
-                var js, sjs = d.getElementsByTagName(s)[0],
-                    t = Math.floor(new Date().getTime() / 1000000);
-                js=d.createElement(s); js.id=id; js.async=1; js.src=u+'?'+t;
-                sjs.parentNode.insertBefore(js, sjs);
-                }(document, 'script', 'os-widget-jssdk', 'https://www.opinionstage.com/assets/loader.js'));
-            div(class="os_widget" data-of="shreyas58" data-path="/shreyas58/try-the-trivia-quiz-below" id="os-widget-740200")
-
-
-
-
-            
-            
+    section#the_quiz.quiz
+      .custom-box
+        br
+        br
+        h2
+          | Did you go through the content above?? If not, please do so. It might help you with the quiz.
+        br
+        script(type='text/javascript').
+          (function(d, s, id, u) {
+          if (d.getElementById(id)) return;
+          var js, sjs = d.getElementsByTagName(s)[0],
+          t = Math.floor(new Date().getTime() / 1000000);
+          js = d.createElement(s);
+          js.id = id;
+          js.async = 1;
+          js.src = u + '?' + t;
+          sjs.parentNode.insertBefore(js, sjs);
+          }(document, 'script', 'os-widget-jssdk', 'https://www.opinionstage.com/assets/loader.js'));
+        #os-widget-740200.os_widget(data-of='shreyas58' data-path='/shreyas58/try-the-trivia-quiz-below')
+    // Footer
+    footer.bg-light.py-5
+      .container
+        .small.text-center.text-muted Copyright © 2020 - Monash Goat
+    // Bootstrap core JS
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js')
+    // Third party plugin JS
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js')
+    // Core theme JS
+    script(src='js/scripts.js')
