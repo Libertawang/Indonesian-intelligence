@@ -1,55 +1,66 @@
 doctype html
 html
   head
-    title
-    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    title= title
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
     // Font Awesome icons (free version)
-    script(src='https://use.fontawesome.com/releases/v5.13.0/js/all.js' crossorigin='anonymous')
+    script(src='https://use.fontawesome.com/releases/v5.13.0/js/all.js', crossorigin='anonymous')
     // Google fonts
-    link(href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700' rel='stylesheet')
-    link(href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic', rel='stylesheet', type='text/css')
     // Third party plugin CSS
-    link(href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css' rel='stylesheet')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css', rel='stylesheet')
     // Core theme CSS (includes Bootstrap)
-    link(href='css/weather.css' rel='stylesheet')
+    link(href='css/weather.css', rel='stylesheet')
     link(href='images/inint.jpg' rel='shortcut icon')
+    link(href='css/quiz.css', rel='stylesheet')
+    
+    script(language='JavaScript').
+      <!--hide
+      var password;
+      var pass1="goats";
+      password=prompt('Please enter your password to view this page!',' ');
+      if (password==pass1)
+      alert('Password Correct! Click OK to enter!');
+      else
+      {
+      window.location="/wrong";
+      }
+      //--> 
   body#page-top
+    // Navigation
     nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
       .container
         a.navbar-brand.js-scroll-trigger(href='#page-top') Indonesian Intelligence
-        button.navbar-toggler.navbar-toggler-right(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
+        button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
           span.navbar-toggler-icon
         #navbarResponsive.collapse.navbar-collapse
           ul.navbar-nav.ml-auto.my-2.my-lg-0
-
             li.nav-item
               a.nav-link.js-scroll-trigger(href='/') Back to Main Page
-            li.nav-item
-              a.nav-link.js-scroll-trigger(href='#page-top') Information
-            li.nav-item
-              a.nav-link.js-scroll-trigger(href='#the_quiz.quiz') Quiz
+
+            
+            
+    // Masthead
     header.masthead
-      div
-            // Intro
-        section.information
-          div.wrapper
-            br  
-            h1 INDEPENDENCE DAY
-            br
-            h3. 
-                On independence day, people in Indonesia climb a pole 
-                with their bare hands to compete for a bike.
-            br
-            h3 We have got a game for you!!
-            br
-            h3 Works best on PC.
-            br
-            // The game
-            iframe(src="https://i.simmer.io/@tpak0002/ppiteration2824"  style="width:960px;height:600px")       
+      section#panja.page-section.bg-primary
+        .container
+          .row.justify-content-center
+            .col-lg-8.text-center
+              h2.text-white.mt-0 Panjat Pinang
+              hr.divider.light.my-4
+              p.text-white-75.mb-4(style='font-size:21px;') 
+                |   On independence day, people in Indonesia climb a pole with their bare hands to compete for a bike.  
+              p.text-white-75.mb-4(style='font-size:21px;') 
+                |   We have got a game for you!! 
+              p.text-white-75.mb-4(style='font-size:21px;') 
+                |   Works best on PC. 
+              iframe(src="https://i.simmer.io/@tpak0002/ppiteration2824"  style="width:960px;height:600px")       
+
     // Footer
     footer.bg-light.py-5
       .container
-      .small.text-center.text-muted Copyright © 2020 - Monash Goat
+        .small.text-center.text-muted Copyright © 2020 - Monash Goat
     // Bootstrap core JS
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
     script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js')
@@ -58,5 +69,4 @@ html
     script(src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js')
     // Core theme JS
     script(src='js/scripts.js')
-
-
+    
