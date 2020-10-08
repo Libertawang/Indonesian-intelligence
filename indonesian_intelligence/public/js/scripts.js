@@ -60,12 +60,3 @@
 var view = document.getElementById('view');
 var list = document.getElementById('list');
 
-list.addEventListener('click', reveal, false);
-
-function reveal(e) {
-  if (e.target !== e.cyurrentTarget) {
-    var tgt = e.target;
-    var src = tgt.src;
-    view.querySelector('img').src = src;
-  }
-}
