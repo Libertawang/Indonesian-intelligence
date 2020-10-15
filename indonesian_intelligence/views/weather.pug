@@ -44,7 +44,24 @@ html
             .team
               .team_member
                 .team_img
-                  img(src='/images/bali.webp' alt='bali_image')
+                  .carousel-inner
+                    // The pictures
+                    .carousel-item.active
+                      img.d-block.w-100(src='/images/bali.webp' alt='bali1')
+                    .carousel-item
+                      img.d-block.w-100(src='/images/java.jpg' alt='bali2')
+                    .carousel-item
+                      img.d-block.w-100(src='/images/sumatra.jpg' alt='bali3')
+                    .carousel-item
+                      img.d-block.w-100(src='/images/nusa.webp' alt='bali4')
+                  // Add arrow key to navigate
+                  a.carousel-control-prev(href='#carouselIndicators' role='button' data-slide='prev')
+                    span.carousel-control-prev-icon(aria-hidden='true')
+                    span.sr-only Previous
+                  a.carousel-control-next(href='#carouselIndicators' role='button' data-slide='next')
+                    span.carousel-control-next-icon(aria-hidden='true')
+                    span.sr-only Next                
+
                 h3 Bali
                 p
                   | Bali attracts a lot of tourists every year with the help of its wild beaches. Most of the rainfall is received between November and March. The rains are usually followed by sunny clear skies. The best time to visit Bali is between
