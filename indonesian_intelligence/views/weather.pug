@@ -70,20 +70,71 @@ html
                   | April and September when it is the sunniest making the time spent at the beach swimming and surfing wonderful!!
               .team_member
                 .team_img
-                  img(src='/images/java.jpg' alt='java_image')
+                  #carouselIndicators.carousel.slide(data-ride='carousel')
+                    .carousel-inner
+                      // The pictures
+                      .carousel-item.active
+                        img.d-block.w-100(src='/images/bali.webp' alt='bali1')
+                      .carousel-item
+                        img.d-block.w-100(src='/images/java.jpg' alt='bali2')
+                      .carousel-item
+                        img.d-block.w-100(src='/images/sumatra.jpg' alt='bali3')
+                      .carousel-item
+                        img.d-block.w-100(src='/images/nusa.webp' alt='bali4')
+                    // Add arrow key to navigate
+                    a.carousel-control-prev(href='#carouselIndicators' role='button' data-slide='prev')
+                      span.carousel-control-prev-icon(aria-hidden='true')
+                      span.sr-only Previous
+                    a.carousel-control-next(href='#carouselIndicators' role='button' data-slide='next')
+                      span.carousel-control-next-icon(aria-hidden='true')
+                      span.sr-only Next
                 h3 Java
                 p
                   | Java is one of the most captivating islands in Indonesia. It is pretty dry and hot during the months April to October. This is the best time to visit Java for watching the sun rise over giant buddhas and rumbling Bromo (the Volcanos)
               .team_member
                 .team_img
-                  img(src='/images/sumatra.jpg' alt='sumatra_image')
+                  #carouselIndicators.carousel.slide(data-ride='carousel')
+                    .carousel-inner
+                      // The pictures
+                      .carousel-item.active
+                        img.d-block.w-100(src='/images/bali.webp' alt='bali1')
+                      .carousel-item
+                        img.d-block.w-100(src='/images/java.jpg' alt='bali2')
+                      .carousel-item
+                        img.d-block.w-100(src='/images/sumatra.jpg' alt='bali3')
+                      .carousel-item
+                        img.d-block.w-100(src='/images/nusa.webp' alt='bali4')
+                    // Add arrow key to navigate
+                    a.carousel-control-prev(href='#carouselIndicators' role='button' data-slide='prev')
+                      span.carousel-control-prev-icon(aria-hidden='true')
+                      span.sr-only Previous
+                    a.carousel-control-next(href='#carouselIndicators' role='button' data-slide='next')
+                      span.carousel-control-next-icon(aria-hidden='true')
+                      span.sr-only Next
                 h3 Sumatra
                 p
                   | Sumatra has a hot and humid tropical climate. That said, the monsoons are extreme and lead to potholed and unpaved roads. This makes hiking extremely difficult. Therefore, the best time to visit Sumatra is between May and June or September
                   | and October when its neither too hot nor heavy rainfall. Orangutans are fairly common.
               .team_member
                 .team_img
-                  img(src='/images/nusa.webp' alt='nusa_image')
+                  #carouselIndicators.carousel.slide(data-ride='carousel')
+                    .carousel-inner
+                      // The pictures
+                      .carousel-item.active
+                        img.d-block.w-100(src='/images/bali.webp' alt='bali1')
+                      .carousel-item
+                        img.d-block.w-100(src='/images/java.jpg' alt='bali2')
+                      .carousel-item
+                        img.d-block.w-100(src='/images/sumatra.jpg' alt='bali3')
+                      .carousel-item
+                        img.d-block.w-100(src='/images/nusa.webp' alt='bali4')
+                    // Add arrow key to navigate
+                    a.carousel-control-prev(href='#carouselIndicators' role='button' data-slide='prev')
+                      span.carousel-control-prev-icon(aria-hidden='true')
+                      span.sr-only Previous
+                    a.carousel-control-next(href='#carouselIndicators' role='button' data-slide='next')
+                      span.carousel-control-next-icon(aria-hidden='true')
+                      span.sr-only Next
                 h3 Nusa Tenggara
                 p
                   | The difference between the dry and wet seasons are slightly bigger in this region. As a rule of thumb, the closer to Autralia you are, the longer the dry season. Dry months are between April and September which is the favourable time
