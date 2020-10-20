@@ -21,9 +21,14 @@ router.get('/panjatpinang', function(req, res, next) {
   res.render('panjat_pinang', { title: 'Panjat Pinang' });
 });
 
-/* GET game page. */
+/* GET deny page. */
 router.get('/wrong', function(req, res, next) {
   res.render('wrong', { title: 'Wrong Password' });
+});
+
+/* GET deny page. */
+router.get('/tribes', function(req, res, next) {
+  res.render('tribes', { title: 'Indonesian Tribes' });
 });
 
 module.exports = router;
