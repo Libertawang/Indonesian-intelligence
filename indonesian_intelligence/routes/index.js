@@ -26,9 +26,14 @@ router.get('/wrong', function(req, res, next) {
   res.render('wrong', { title: 'Wrong Password' });
 });
 
+/* GET tour page. */
+router.get('/tour', function(req, res, next) {
+  res.render('tour', { title: 'Indonesian Tribes' });
+});
+
 /* GET deny page. */
 router.get('/tribes', function(req, res, next) {
-  res.render('tribes', { title: 'Indonesian Tribes' });
+  res.render('tribes', { title: 'Visit Indonesia' });
 });
 
 module.exports = router;
