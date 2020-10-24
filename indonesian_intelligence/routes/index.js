@@ -11,10 +11,7 @@ router.get('/weather', function(req, res, next) {
   res.render('weather', { title: 'Weather' });
 });
 
-/* GET second weather page. */
-router.get('/weather2', function(req, res, next) {
-  res.render('weather2', { title: 'Weather Two' });
-});
+
 
 /* GET game page. */
 router.get('/panjatpinang', function(req, res, next) {
@@ -27,13 +24,13 @@ router.get('/wrong', function(req, res, next) {
 });
 
 /* GET tour page. */
-router.get('/tour', function(req, res, next) {
-  res.render('tour', { title: 'Indonesian Tribes' });
+router.get('/travel', function(req, res, next) {
+  res.render('travel', { title: 'Visit Indonesia' });
 });
 
-/* GET deny page. */
+/* GET tribes page. */
 router.get('/tribes', function(req, res, next) {
-  res.render('tribes', { title: 'Visit Indonesia' });
+  res.render('tribes', { title: 'Indonesian Tribes' });
 });
 
 module.exports = router;
