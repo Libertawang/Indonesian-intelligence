@@ -15,7 +15,18 @@ html
     link(href='images/inint.jpg' rel='shortcut icon')
     link(href='css/quiz.css', rel='stylesheet')
     
-    
+    script(language='JavaScript').
+      <!--hide
+      var password;
+      var pass1="goats";
+      password=prompt('Please enter your password to view this page!',' ');
+      if (password==pass1)
+      alert('Password Correct! Click OK to enter!');
+      else
+      {
+      window.location="/wrong";
+      }
+      //--> 
   body#page-top
     // Navigation
     nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
@@ -47,6 +58,9 @@ html
             h1.text-uppercase.text-white.font-weight-bold We are here to help you learn more about Indonesia!
             hr.divider.my-4
           .col-lg-8.align-self-baseline
+            p.text-white-75.font-weight-light.mb-5
+              | There are many Australians that are born from Indonesian parents. 
+              |But learning about Indonesia in Australia might have it's limitation.
             p.text-white-75.font-weight-light.mb-5
               | Jump on our fun activities and learn!
             a.btn.btn-primary.btn-xl.js-scroll-trigger(href='#panja') Find Out More
